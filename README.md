@@ -5,9 +5,9 @@ This project was developed specifically for BotNoi to gain a comprehensive under
 
 ## Requirements
 - Angular (^15.2.0)
-- TypeScript 
 - RxJS (~7.8.0)
 - tslib (^2.3.0)
+- TypeScript 
 
 ## How to run this project
 
