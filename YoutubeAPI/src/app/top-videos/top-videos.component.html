@@ -1,5 +1,11 @@
+<app-navbar></app-navbar>
+
 <div *ngIf="topVideos.length">
-    <h2>Top 10 Videos Trending in Thailand</h2>
+
+    <div class="title">
+        <p class="title-text">Top 10 Videos Trending in Thailand</p>
+    </div>
+
     <ul>
       <li *ngFor="let video of topVideos">
         <h3>{{ video.snippet.title }}</h3>
@@ -7,5 +13,6 @@
         <!-- <p>{{ video.snippet.description }}</p> -->
       </li>
     </ul>
+
 </div>
   
