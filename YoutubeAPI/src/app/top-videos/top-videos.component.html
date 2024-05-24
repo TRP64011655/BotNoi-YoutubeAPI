@@ -1,0 +1,11 @@
+<div *ngIf="topVideos.length">
+    <h2>Top 10 Videos Trending in Thailand</h2>
+    <ul>
+      <li *ngFor="let video of topVideos">
+        <h3>{{ video.snippet.title }}</h3>
+        <img [src]="video.snippet.thumbnails.default.url" alt="{{ video.snippet.title }}">
+        <!-- <p>{{ video.snippet.description }}</p> -->
+      </li>
+    </ul>
+</div>
+  
