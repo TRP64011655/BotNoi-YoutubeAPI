@@ -21,7 +21,7 @@ Navigate to the project directory:
   cd YouTubeAPI/src/app
 ```
 
-Run the Python script:
+Run the project:
 ```bash
   ng s
 ```
