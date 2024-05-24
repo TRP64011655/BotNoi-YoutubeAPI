@@ -21,4 +21,9 @@ export class YoutubeService {
     };
     return this.http.get(this.apiUrl, { params });
   }
+
+  getTopVideosWorldwide(maxResults: number = 10): Observable<any> {
+    return this.getTopVideos('', maxResults);
+  }
+  
 }

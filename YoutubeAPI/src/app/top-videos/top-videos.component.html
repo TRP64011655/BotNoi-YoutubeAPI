@@ -1,18 +1,16 @@
 <app-navbar></app-navbar>
 
 <div *ngIf="topVideos.length">
-
     <div class="title">
         <p class="title-text">Top 10 Videos Trending in Thailand</p>
     </div>
 
-    <ul>
-      <li *ngFor="let video of topVideos">
-        <h3>{{ video.snippet.title }}</h3>
-        <img [src]="video.snippet.thumbnails.default.url" alt="{{ video.snippet.title }}">
-        <!-- <p>{{ video.snippet.description }}</p> -->
-      </li>
-    </ul>
-
+    <div class="videos">
+        <div class="video-item" *ngFor="let video of topVideos">
+            <h3 class="videoTitle">{{ video.snippet.title }}</h3>
+            <a [href]="'https://www.youtube.com/watch?v=' + video.id" target="_blank">
+                <img [src]="video.snippet.thumbnails.high.url" alt="{{ video.snippet.title }}">
+            </a>
+        </div>
+    </div>
 </div>
-  
