@@ -1,12 +1,17 @@
 .title {
-    background-color: rgb(252, 89, 89);
+    background-color: rgb(255, 0, 0);
+    font-family: Roboto;
+    padding: 10px;
 }
 
 .title-text {
-    font-size: 70px;
+    font-size: 40px;
+    font-family: Roboto;
     color: white;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
+    align-items: center;
+    text-align: center;
 }
