@@ -72,31 +72,19 @@ nav ul li a.active-link {
     background-color: #555;
     border-radius: 20px;
 }
-  
-@media (max-width: 430px) {
-    .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
+
+@media (max-width: 1097px) {
+    .right {
+        display: none;
     }
-  
-    .center, .right {
-        width: 100%;
-        justify-content: flex-start;
-    }
-  
-    .center ul, .right {
-        display: block;
-    }
-  
+}
+
+@media (max-width: 943px) {
     nav ul li {
-        margin: 10px 0;
+        display: none;
     }
-  
-    .logo {
-        width: 150px; /* Adjust the size of the logo for smaller screens */
-    }
-  
-    nav ul li a, .right li {
-        font-size: 18px; /* Further adjust font size for smaller screens */
+
+    .right {
+        display: none;
     }
 }
