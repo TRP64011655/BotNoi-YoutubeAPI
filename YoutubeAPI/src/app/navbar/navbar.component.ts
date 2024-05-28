@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  isDropdownMenuVisible = false;
 
+  toggleDropdownMenu() {
+    this.isDropdownMenuVisible = !this.isDropdownMenuVisible;
+    const burgerMenu = document.querySelector('.burger-menu');
+    burgerMenu?.classList.toggle('change');
+  }
 }

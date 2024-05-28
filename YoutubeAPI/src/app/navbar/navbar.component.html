@@ -14,5 +14,16 @@
         <div class="right">
             <p>Teerapat W.</p>
         </div>
+        <div class="burger-menu" (click)="toggleDropdownMenu()">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
     </div>
 </nav>
+<div class="dropdown-menu" [class.show]="isDropdownMenuVisible">
+    <ul>
+        <li><a routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+        <li><a routerLink="/top-videos" routerLinkActive="active-link">Top Videos in Thailand</a></li>
+    </ul>
+</div>
