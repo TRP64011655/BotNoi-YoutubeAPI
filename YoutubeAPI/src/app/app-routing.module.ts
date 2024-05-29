@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'top-videos', component: TopVideosComponent },
   { path: 'top-videos-worldwide', component: TopVideosWorldWideComponent },  
   { path: 'home', component: HomeComponent },
+  { path: '**', redirectTo: 'home' }, 
 ];
 
 @NgModule({
