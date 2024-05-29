@@ -111,3 +111,40 @@
   font-size: 0.9em;
   margin-top: 5px;
 }
+
+@media only screen and (max-width: 430px) {
+    .body {
+      flex-direction: column;
+      padding: 5px;
+      background-color: white;
+    }
+
+    .header, .bottom {
+        background-color: white;;
+    }
+  
+    .inner-body {
+      padding: 5px;
+    }
+  
+    .divCenter {
+      width: 90%;
+      border: none;
+    }
+  
+    .loginEmail,
+    .loginPassword {
+      width: 100%;
+      margin-left: 20%;
+      margin-right: 0;
+    }
+  
+    .loginButton {
+      width: 90%;
+    }
+  
+    .error-message {
+      font-size: 0.8em;
+    }
+  }
+  

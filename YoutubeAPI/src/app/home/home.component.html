@@ -24,7 +24,7 @@
               >
               <span class="error-message" *ngIf="isEmailEmpty && !emailInput.value"><br>Please fill in your email</span>
               <span class="error-message" *ngIf="!isEmailEmpty && emailInput.value && !isValidEmail(emailInput.value)">
-                Please enter a valid email address
+                <br>Please enter a valid email address
               </span>
             </div>
             <div class="loginPassword">

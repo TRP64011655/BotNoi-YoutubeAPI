@@ -21,4 +21,9 @@ export class NavbarComponent {
     const burgerMenu = document.querySelector('.burger-menu');
     burgerMenu?.classList.toggle('change');
   }
+
+  logout() {
+    localStorage.clear(); 
+    this.router.navigate(['/home']); 
+  }
 }

@@ -9,34 +9,7 @@ import { catchError } from 'rxjs/operators';
 export class YoutubeService {
   private apiKey = 'AIzaSyABXr9bp1NDDo-tINnTCeHp4u1ekK5IZU8';
   private apiUrl = 'https://www.googleapis.com/youtube/v3/videos';
-
-  // Mock data for top videos
-  private mockTopVideos = {
-    items: [
-      {
-        id: 'mock1',
-        snippet: {
-          title: 'Mock Video 1',
-          thumbnails: {
-            high: {
-              url: 'path/to/mock-thumbnail1.jpg'
-            }
-          }
-        }
-      },
-      {
-        id: 'mock2',
-        snippet: {
-          title: 'Mock Video 2',
-          thumbnails: {
-            high: {
-              url: 'path/to/mock-thumbnail2.jpg'
-            }
-          }
-        }
-      },
-    ]
-  };
+  private mockDataUrl = '/assets/mock-top-videos.json'; 
 
   constructor(private http: HttpClient) { }
 
@@ -52,7 +25,7 @@ export class YoutubeService {
       catchError(error => {
         console.error('Error fetching top videos', error);
         // Return mock data in case of error
-        return of(this.mockTopVideos);
+        return this.http.get<any>(this.mockDataUrl);
       })
     );
   }

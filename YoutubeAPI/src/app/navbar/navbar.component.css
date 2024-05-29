@@ -110,7 +110,23 @@ nav ul li a.active-link {
     display: none;
 }
 
-@media (max-width: 1155px) {
+.burger-menu {
+    display: flex;
+}
+
+.dropdown-menu {
+    display: none; 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.dropdown-menu.show {
+    display: block; 
+    max-height: 500px; 
+}
+
+@media (max-width: 1173px) {
     .nav ul li {
         display: none;
     }
@@ -142,7 +158,7 @@ nav ul li a.active-link {
     }
 }
 
-@media (max-width: 943px) {
+@media (max-width: 739px) {
     nav ul li {
         display: none;
     }
@@ -153,6 +169,38 @@ nav ul li a.active-link {
 
     .dropdown-menu {
         display: none; 
+    }
+}
+
+@media (max-width: 1155px) {
+    .nav ul li {
+        display: none;
+    }
+
+    .hide-on-small-screen {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        display: none; 
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+    .dropdown-menu.show {
+        display: block; 
+        max-height: 500px; 
+    }
+}
+
+@media (max-width: 1097px) {
+    .right {
+        display: none;
     }
 }
 

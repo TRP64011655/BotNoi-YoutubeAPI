@@ -1,0 +1,27 @@
+{
+    "items": [
+      {
+        "id": "mock1",
+        "snippet": {
+          "title": "Mock Video 2",
+          "thumbnails": {
+            "high": {
+              "url": "path/to/mock-thumbnail1.jpg"
+            }
+          }
+        }
+      },
+      {
+        "id": "mock2",
+        "snippet": {
+          "title": "Mock Video 2",
+          "thumbnails": {
+            "high": {
+              "url": "path/to/mock-thumbnail2.jpg"
+            }
+          }
+        }
+      }
+    ]
+  }
+  
