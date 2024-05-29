@@ -9,6 +9,8 @@ import { YoutubeService } from '../youtube.service';
 })
 export class HomeComponent implements OnInit {
   topVideos: any[] = [];
+  isEmailEmpty: boolean = false;
+  isPasswordEmpty: boolean = false;
 
   @ViewChild('emailInput', { static: true }) emailInput!: ElementRef;
   @ViewChild('passwordInput', { static: true }) passwordInput!: ElementRef;
@@ -30,12 +32,41 @@ export class HomeComponent implements OnInit {
     const email = this.emailInput.nativeElement.value;
     const password = this.passwordInput.nativeElement.value;
 
+    this.isEmailEmpty = !email;
+    this.isPasswordEmpty = !password;
+
     if (email && password) {
-      localStorage.setItem('email', email);
-      localStorage.setItem('password', password);
-      this.router.navigate(['/top-videos']);
+      if (this.isValidEmail(email)) {
+        // Mocking username and token
+        const username = 'mockUsername';
+        const token = 'mockToken123';
+
+        localStorage.setItem('email', email);
+        localStorage.setItem('password', password);
+        localStorage.setItem('username', username);
+        localStorage.setItem('token', token);
+
+        this.router.navigate(['/top-videos']);
+      } else {
+        alert('Please enter a valid email address');
+      }
     } else {
       alert('Please enter both email and password');
+    }
+  }
+
+  isValidEmail(email: string): boolean {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
+  removeEmptyClass(input: HTMLInputElement): void {
+    input.classList.remove('empty-input');
+  }
+
+  handleKeyPress(event: KeyboardEvent, input: HTMLInputElement): void {
+    if (input.classList.contains('empty-input')) {
+      input.classList.remove('empty-input');
     }
   }
 }
