@@ -18,14 +18,14 @@ export class HomeComponent implements OnInit {
   constructor(private youtubeService: YoutubeService, private router: Router) {}
 
   ngOnInit(): void {
-    this.youtubeService.getTopVideosWorldwide().subscribe(
-      (data) => {
-        this.topVideos = data.items;
-      },
-      (error) => {
-        console.error('Error fetching top worldwide videos', error);
-      }
-    );
+    // this.youtubeService.getTopVideosWorldwide().subscribe(
+    //   (data) => {
+    //     this.topVideos = data.items;
+    //   },
+    //   (error) => {
+    //     console.error('Error fetching top worldwide videos', error);
+    //   }
+    // );
   }
 
   onLogin(): void {
