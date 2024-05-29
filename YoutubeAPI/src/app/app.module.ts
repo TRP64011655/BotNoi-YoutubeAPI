@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { TopVideosComponent } from './top-videos/top-videos.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { TopVideosWorldWideComponent } from './top-videos-worldwide/top-videos-worldwide.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopVideosComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    TopVideosWorldWideComponent
   ],
   imports: [
     BrowserModule,
