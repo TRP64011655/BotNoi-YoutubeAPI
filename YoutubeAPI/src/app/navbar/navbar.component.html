@@ -7,9 +7,8 @@
         </div>        
         <div class="center">
             <ul>
-                <!-- <li><a routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a></li> -->
-                <li><a routerLink="/top-videos" routerLinkActive="active-link">Top Videos in Thailand</a></li>
-                <li class="hide-on-small-screen"><a routerLink="/top-videos-worldwide" routerLinkActive="active-link">Top Videos Worldwide</a></li>
+                <li *ngIf="!isHomeRoute"><a routerLink="/top-videos" routerLinkActive="active-link">Top Videos in Thailand</a></li>
+                <li *ngIf="!isHomeRoute" class="hide-on-small-screen"><a routerLink="/top-videos-worldwide" routerLinkActive="active-link">Top Videos Worldwide</a></li>
             </ul>
         </div>
         <div class="right">

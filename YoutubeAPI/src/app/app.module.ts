@@ -20,7 +20,7 @@ import { TopVideosWorldWideComponent } from './top-videos-worldwide/top-videos-w
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

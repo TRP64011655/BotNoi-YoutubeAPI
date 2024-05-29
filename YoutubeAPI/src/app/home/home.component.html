@@ -1,3 +1,38 @@
-<app-navbar></app-navbar>
-
-<h1>home</h1>
+<div class="outer-container">
+    <div class="header">
+      <!-- Header content -->
+    </div>
+    <div class="body">
+      <div class="inner-body">
+        <!-- Inner body content -->
+      </div>
+      <div class="center-content">
+        <div class="divCenter">
+          <div class="inner-center">
+            <img src="/assets/images/YouTubeLogo2.png" class="youtubeLogo2">
+          </div>
+          <div>
+            <div class="loginTitle">
+              <h2>Login to YouTube</h2>
+            </div>
+            <div class="loginEmail">
+              <label for="email" class="form-label">Email</label> <br>
+              <input type="email" class="form-control" id="email" #emailInput>
+            </div>
+            <div class="loginPassword">
+              <label for="password" class="form-label">Password</label> <br>
+              <input type="password" class="form-control" id="password" #passwordInput>
+            </div>
+            <div class="divLogin">
+              <button class="loginButton" (click)="onLogin()">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inner-body">
+      </div>
+    </div>
+    <div class="bottom">
+    </div>
+  </div>
+  
