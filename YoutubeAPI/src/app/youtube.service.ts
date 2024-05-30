@@ -24,7 +24,6 @@ export class YoutubeService {
     return this.http.get(this.apiUrl, { params }).pipe(
       catchError(error => {
         console.error('Error fetching top videos', error);
-        // Return mock data in case of error
         return this.http.get<any>(this.mockDataUrl);
       })
     );

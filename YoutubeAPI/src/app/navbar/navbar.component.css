@@ -222,6 +222,12 @@ nav ul li a.active-link {
     }
 }
 
+@media (max-width: 430px) {
+    .logo {
+        width: 150px;
+    }
+}
+
 .dropdown-menu ul {
     list-style: none;
     padding: 0;
