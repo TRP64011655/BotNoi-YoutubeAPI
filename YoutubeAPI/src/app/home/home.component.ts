@@ -12,8 +12,11 @@ export class HomeComponent implements OnInit {
   isEmailEmpty: boolean = false;
   isPasswordEmpty: boolean = false;
 
-  @ViewChild('emailInput', { static: true }) emailInput!: ElementRef;
-  @ViewChild('passwordInput', { static: true }) passwordInput!: ElementRef;
+  email: string = '';
+  password: string = '';
+
+  @ViewChild('emailInput', { static: true }) emailInput!: ElementRef<HTMLInputElement>;
+  @ViewChild('passwordInput', { static: true }) passwordInput!: ElementRef<HTMLInputElement>;
 
   constructor(private youtubeService: YoutubeService, private router: Router) {}
 
@@ -37,12 +40,11 @@ export class HomeComponent implements OnInit {
 
     if (email && password) {
       if (this.isValidEmail(email)) {
-        // Mocking username and token
         const username = 'mockUsername';
         const token = 'mockToken123';
 
-        localStorage.setItem('email', email);
-        localStorage.setItem('password', password);
+        localStorage.setItem('email', this.email);
+        localStorage.setItem('password', this.password);
         localStorage.setItem('username', username);
         localStorage.setItem('token', token);
 

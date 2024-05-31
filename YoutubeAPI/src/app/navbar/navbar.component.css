@@ -258,3 +258,7 @@ nav ul li a.active-link {
 .dropdown-menu ul li a:hover {
     background-color: #b9b9b9;
 }
+
+.logoutText:hover {
+    cursor: pointer;
+}

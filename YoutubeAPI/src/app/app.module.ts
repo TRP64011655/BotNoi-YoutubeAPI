@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { TopVideosWorldWideComponent } from './top-videos-worldwide/top-videos-worldwide.component';
 
 import { HttpInterceptorService } from './http-interceptor.service'; // Import the interceptor service
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HttpInterceptorService } from './http-interceptor.service'; // Import t
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [
     {
