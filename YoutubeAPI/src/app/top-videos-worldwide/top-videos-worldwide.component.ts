@@ -5,9 +5,9 @@ export interface Video {
   id: string;
   snippet: {
     title: string;
-    description: string;
+    description?: string;
     thumbnails: {
-      default: {
+      default?: {
         url: string;
       };
       high: {
@@ -22,24 +22,20 @@ export interface Video {
   templateUrl: './top-videos-worldwide.component.html',
   styleUrls: ['./top-videos-worldwide.component.css']
 })
-
 export class TopVideosWorldWideComponent implements OnInit {
-  topVideos: any[] = [];
+  topVideos: Video[] = [];
 
   constructor(private youtubeService: YoutubeService) { }
 
   ngOnInit(): void {
-    this.youtubeService.getTopVideos().subscribe(
+    this.youtubeService.getTopVideosWorldwide(10).subscribe(
       (data) => {
+        console.log('Received data:', data); 
         this.topVideos = data.items.map((item: any) => ({
           id: item.id,
           snippet: {
             title: item.snippet.title,
-            description: item.snippet.description,
             thumbnails: {
-              default: {
-                url: item.snippet.thumbnails.default.url
-              },
               high: {
                 url: item.snippet.thumbnails.high.url
               }

@@ -3,7 +3,7 @@
       {
         "id": "mock1",
         "snippet": {
-          "title": "Mock Video 2",
+          "title": "Mock Video 1",
           "thumbnails": {
             "high": {
               "url": "path/to/mock-thumbnail1.jpg"
