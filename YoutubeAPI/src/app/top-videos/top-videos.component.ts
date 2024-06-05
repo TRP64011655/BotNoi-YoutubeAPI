@@ -5,9 +5,9 @@ export interface Video {
   id: string;
   snippet: {
     title: string;
-    description: string;
+    description?: string;
     thumbnails: {
-      default: {
+      default?: {
         url: string;
       };
       high: {
@@ -30,15 +30,14 @@ export class TopVideosComponent implements OnInit {
   ngOnInit(): void {
     this.youtubeService.getTopVideos().subscribe(
       (data) => {
+        console.log('Received data:', data); 
         this.topVideos = data.items.map((item: any) => ({
           id: item.id,
           snippet: {
             title: item.snippet.title,
             description: item.snippet.description,
             thumbnails: {
-              default: {
-                url: item.snippet.thumbnails.default.url
-              },
+              default: item.snippet.thumbnails.default ? { url: item.snippet.thumbnails.default.url } : undefined,
               high: {
                 url: item.snippet.thumbnails.high.url
               }
