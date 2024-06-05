@@ -1,27 +1,114 @@
 {
-    "items": [
-      {
-        "id": "mock1",
-        "snippet": {
-          "title": "Mock Video 1",
-          "thumbnails": {
-            "high": {
-              "url": "path/to/mock-thumbnail1.jpg"
-            }
-          }
-        }
-      },
-      {
-        "id": "mock2",
-        "snippet": {
-          "title": "Mock Video 2",
-          "thumbnails": {
-            "high": {
-              "url": "path/to/mock-thumbnail2.jpg"
-            }
+  "items": [
+    {
+      "id": "w2IhccXakkE",
+      "snippet": {
+        "title": "Polo G - RAPSTAR",
+        "thumbnails": {
+          "high": {
+            "url": "/assets/images/thumbnails/pologRapstar.jpg"
           }
         }
       }
-    ]
-  }
-  
+    },
+    {
+      "id": "h3EJICKwITw",
+      "snippet": {
+        "title": "Juice WRLD - All Girls Are The Same",
+        "thumbnails": {
+          "high": {
+            "url": "/assets/images/thumbnails/juicewrldAllGirlsAreTheSame.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "pDddlvCfTiw",
+      "snippet": {
+        "title": "CENTRAL CEE FT. LIL BABY - BAND4BAND (MUSIC VIDEO)",
+        "thumbnails": {
+          "high": {
+            "url": "/assets/images/thumbnails/centralceeLilbabyBand4Band.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "LZFcE8iPgAw",
+      "snippet": {
+        "title": "The Kid Laroi - NEED YOU MOST (So Sick) (Official Visualizer)",
+        "thumbnails": {
+          "high": {
+            "url": "/assets/images/thumbnails/theKidLaroiNeedYouMost.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "HIwAI05Y1fU",
+      "snippet": {
+        "title": "Jack Harlow - WHATS POPPIN feat. Dababy, Tory Lanez, & Lil Wayne [Official Video]",
+        "thumbnails": {
+          "high": {
+            "url": "/assets/images/thumbnails/jackHarlowWhatsPoppin.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "JFm7YDVlqnI",
+      "snippet": {
+        "title": "Drake - Laugh Now Cry Later (Official Music Video) ft. Lil Durk",
+        "thumbnails": {
+          "high": {
+            "url": "/assets/images/thumbnails/drakeLNCL.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "UNZqm3dxd2w",
+      "snippet": {
+        "title": "Roddy Ricch - The Box [Official Music Video]",
+        "thumbnails": {
+          "high": {
+            "url": "/assets/images/thumbnails/RRTheBox.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "wf8Yb5ZCM",
+      "snippet": {
+        "title": "Central Cee - Khabib [Music Video]",
+        "thumbnails": {
+          "high": {
+            "url": "/assets/images/thumbnails/centralceeKhabib.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "ZD6C498MB4U",
+      "snippet": {
+        "title": "The Kid LAROI, Juice WRLD - GO (Official Video)",
+        "thumbnails": {
+          "high": {
+            "url": "/assets/images/thumbnails/theKidLaroiJuiceWrldGo.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "hqDinxaPUK4",
+      "snippet": {
+        "title": "YNW Melly - Murder On My Mind [Official Video]",
+        "thumbnails": {
+          "high": {
+            "url": "/assets/images/thumbnails/YNWMELLYMurderOnMyMind.jpg"
+          }
+        }
+      }
+    }
+  ]
+}
