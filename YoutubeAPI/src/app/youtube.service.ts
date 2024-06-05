@@ -7,9 +7,10 @@ import { catchError } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class YoutubeService {
-  private apiKey = 'AIzaSyABXr9bp1NDDo-tINnTCeHp4u1ekK5IZU8';  
-  private apiUrl = 'https://www.googleapis.com/youtube/v3/videos';
+  private apiKey = 'AIzaSyABXr9bp1NDDo-tINnTCeHp4u1ekK5IZU8';
+  private apiUrl = 'https://www.googleapis.com/youtube/v3/video';
   private mockDataUrl = '/assets/mock-top-videos.json';
+  private mockDataTHUrl = '/assets/mock-top-videos-th.json';  
 
   constructor(private http: HttpClient) { }
 
@@ -21,10 +22,12 @@ export class YoutubeService {
       .set('maxResults', maxResults.toString())
       .set('key', this.apiKey);
 
+    const mockUrl = regionCode === 'TH' ? this.mockDataTHUrl : this.mockDataUrl;
+
     return this.http.get(this.apiUrl, { params }).pipe(
       catchError(error => {
         console.error('Error fetching top videos', error);
-        return this.http.get<any>(this.mockDataUrl);
+        return this.http.get<any>(mockUrl);
       })
     );
   }

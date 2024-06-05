@@ -28,7 +28,7 @@ export class TopVideosComponent implements OnInit {
   constructor(private youtubeService: YoutubeService) { }
 
   ngOnInit(): void {
-    this.youtubeService.getTopVideos().subscribe(
+    this.youtubeService.getTopVideos('TH').subscribe(
       (data) => {
         console.log('Received data:', data); 
         this.topVideos = data.items.map((item: any) => ({
