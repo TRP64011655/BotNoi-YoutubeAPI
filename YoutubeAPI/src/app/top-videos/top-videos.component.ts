@@ -23,7 +23,7 @@ export interface Video {
   styleUrls: ['./top-videos.component.css']
 })
 export class TopVideosComponent implements OnInit {
-  topVideos: Video[] = [];  // Use the Video interface
+  topVideos: Video[] = [];
 
   constructor(private youtubeService: YoutubeService) { }
 

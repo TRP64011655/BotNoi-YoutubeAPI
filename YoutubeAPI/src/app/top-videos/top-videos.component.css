@@ -51,7 +51,6 @@ img {
     max-width: 300px; 
 }
 
-/* Responsive */
 @media (max-width: 1400px) {
     .videos {
         grid-template-columns: repeat(4, 1fr); 

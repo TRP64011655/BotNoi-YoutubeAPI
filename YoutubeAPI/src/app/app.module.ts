@@ -9,7 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { TopVideosWorldWideComponent } from './top-videos-worldwide/top-videos-worldwide.component';
 
-import { HttpInterceptorService } from './http-interceptor.service'; // Import the interceptor service
+import { HttpInterceptorService } from './http-interceptor.service'; 
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
